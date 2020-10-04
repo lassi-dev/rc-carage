@@ -1,3 +1,5 @@
+using RCCarage.AppLogic;
+using RCCarage.CLI;
 using RCCarage.Database;
 using RCCarage.Database.Implementation;
 using System;
@@ -12,14 +14,8 @@ namespace RCCarage
     {
         static void Main(string[] args)
         {
-            ICarageDatabase database = CarageDatabase.GetInstance();
-
-            foreach (RCCar car in database.GetAllCars())
-            {
-                Console.WriteLine(car.Name);
-            }
-            
-            Console.ReadKey();
+            IMenu menu = new Menu();
+            menu.Run();
         }
     }
 }

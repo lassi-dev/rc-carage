@@ -71,6 +71,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppLogic\IMenu.cs" />
+    <Compile Include="CLI\Menu.cs" />
+    <Compile Include="CLI\MenuTexts.cs" />
     <Compile Include="Database\ICarageDatabase.cs" />
     <Compile Include="Database\Implementation\CarageDatabase.cs" />
     <Compile Include="Model\RCCar.cs" />
@@ -93,8 +96,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AppLogic\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
